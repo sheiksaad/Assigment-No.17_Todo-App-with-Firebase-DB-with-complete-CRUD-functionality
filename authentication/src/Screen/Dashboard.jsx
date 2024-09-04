@@ -76,7 +76,7 @@ const Dashboard = () => {
     <>
       <Container>
         <Typography variant="h4" component="h1" gutterBottom>
-          Dashboard Page
+          Todo App
         </Typography>
 
         <Paper style={{ padding: 16 }}>
@@ -84,32 +84,13 @@ const Dashboard = () => {
             <Grid item xs={12}>
               <TextField
                 fullWidth
-                label="Enter Name"
+                label="Add Task"
                 variant="outlined"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </Grid>
-            <Grid item xs={12}>
-              <TextField
-                fullWidth
-                label="Enter Email"
-                variant="outlined"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                fullWidth
-                label="Enter Password"
-                variant="outlined"
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </Grid>
+
             <Grid item xs={12}>
               <Button
                 fullWidth
@@ -117,7 +98,7 @@ const Dashboard = () => {
                 color="primary"
                 onClick={addData}
               >
-                Add Data
+                Add
               </Button>
             </Grid>
           </Grid>
